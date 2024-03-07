@@ -6,10 +6,14 @@ export default class PreloadScene extends Phaser.Scene {
     }
 
     preload() {
-        this.load.image("phaser-logo", "assets/img/phaser-logo.png");
+        // load all images here to have them ready for the game
+        this.load.image("ud-fall", "assets/ud-fall.jpeg");
+        this.load.image("ud-winter", "assets/ud-winter.jpeg");
+        this.load.image("ud-spring", "assets/ud-spring.jpeg");
+        this.load.image("ud-summer", "assets/ud-summer.png");
     }
 
     create() {
-        this.scene.start("MainScene");
+        this.scene.start("Fall");
     }
 }

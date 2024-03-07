@@ -9,9 +9,7 @@ export default class Spring extends Phaser.Scene {
         super({ key: "Spring" });
     }
 
-    preload() {
-        this.load.image("ud-spring", "assets/ud-spring.jpeg");
-    }
+    preload() {}
 
     create(data: SceneData) {
         const backgroundImage = this.add

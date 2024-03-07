@@ -9,9 +9,7 @@ export default class Winter extends Phaser.Scene {
         super({ key: "Winter" });
     }
 
-    preload() {
-        this.load.image("ud-winter", "assets/ud-winter.jpeg");
-    }
+    preload() {}
 
     create(data: SceneData) {
         const backgroundImage = this.add

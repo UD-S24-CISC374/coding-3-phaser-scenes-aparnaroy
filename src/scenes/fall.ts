@@ -16,9 +16,7 @@ export default class Fall extends Phaser.Scene {
         this.semester = 1 | data.semester;
     }
 
-    preload() {
-        this.load.image("ud-fall", "assets/ud-fall.jpeg");
-    }
+    preload() {}
 
     create() {
         const backgroundImage = this.add.image(0, 0, "ud-fall").setOrigin(0, 0);

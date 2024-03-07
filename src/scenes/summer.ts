@@ -9,9 +9,7 @@ export default class Summer extends Phaser.Scene {
         super({ key: "Summer" });
     }
 
-    preload() {
-        this.load.image("ud-summer", "assets/ud-summer.png");
-    }
+    preload() {}
 
     create(data: SceneData) {
         const backgroundImage = this.add
