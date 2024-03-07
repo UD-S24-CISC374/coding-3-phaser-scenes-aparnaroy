@@ -14,7 +14,14 @@ export default class Winter extends Phaser.Scene {
     }
 
     create(data: SceneData) {
-        this.add.image(400, 300, "ud-winter");
+        const backgroundImage = this.add
+            .image(0, 0, "ud-winter")
+            .setOrigin(0, 0);
+        backgroundImage.setScale(
+            this.cameras.main.width / backgroundImage.width,
+            this.cameras.main.height / backgroundImage.height
+        );
+        //this.add.image(400, 300, "ud-winter");
         this.add.text(70, 100, "Winter Campus", {
             fontSize: "52px",
             color: "#000000",

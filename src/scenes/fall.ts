@@ -21,7 +21,12 @@ export default class Fall extends Phaser.Scene {
     }
 
     create() {
-        this.add.image(400, 300, "ud-fall");
+        const backgroundImage = this.add.image(0, 0, "ud-fall").setOrigin(0, 0);
+        backgroundImage.setScale(
+            this.cameras.main.width / backgroundImage.width,
+            this.cameras.main.height / backgroundImage.height
+        );
+        //this.add.image(400, 300, "ud-fall");
         this.add.text(70, 100, "Fall Campus", {
             fontSize: "52px",
             color: "#000000",
